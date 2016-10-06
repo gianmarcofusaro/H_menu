@@ -1,0 +1,85 @@
+.menu-trigger {
+	float: left;
+	border: none;
+	margin: 0;
+	background-color: deeppink;
+	display: block;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	}
+
+.menu-trigger .container {
+	width: 18px;
+	height: 14px;
+	margin: 18px 16px;
+	position: relative;
+	}
+
+.line{
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	width: 50%;
+	}
+
+.topLeft{
+	top: 0;
+	left: 0;
+	transition: all 200ms ease;
+	}
+
+.topRight{
+	top: 0;
+	right: 0;
+	float: right;
+	
+	transition: all 200ms ease;
+	}
+
+.mid{
+	width: 100%;
+	top: 6px;
+	transition: all 200ms ease;
+	}
+
+.bottomLeft{
+	bottom: 0;
+	left: 0;
+	
+	transition: all 200ms ease;
+	}
+
+.bottomRight{
+	bottom: 0;
+	right: 0;
+	transform-origin: 100% 100%;
+	transition: all 200ms ease;
+	}
+
+.containerActive .topLeft{
+	transition: all 200ms ease;
+	transform: translate(1px, 2px) rotate(45deg) scaleX(1.25);
+	}
+
+.containerActive .topRight{
+	transition: all 200ms ease;
+	transform: translate(-1px, -1.5px) rotate(-45deg) scaleX(1.25);
+	transform-origin: 100% 0%;
+	}
+
+.containerActive .mid{
+	transform: scaleX(0.1);
+	transition: all 200ms ease;
+}
+
+.containerActive .bottomLeft{
+	transition: all 200ms ease;
+	transform: translate(2px, 2px) rotate(-45deg) scaleX(1.25);
+	transform-origin: 0% 100%;
+	}
+
+.containerActive .bottomRight{
+	transition: all 200ms ease;
+	transform: translate(-1px, 2px) rotate(45deg) scaleX(1.25);
+	}
